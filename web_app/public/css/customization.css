@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'CharlemagneBoldRegular';
+    src: url('/public/fonts/charlb-webfont.eot');
+    src: url('/public/fonts/charlb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/public/fonts/charlb-webfont.woff') format('woff'),
+         url('/public/fonts/charlb-webfont.ttf') format('truetype'),
+         url('/public/fonts/charlb-webfont.svg#CharlemagneBoldRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4 {
+	font-family: CharlemagneBoldRegular;
+}
+
+#topNav a{
+	height:22px;
+	line-height:22px;
+	padding-left:15px; 
+	border-left:1px solid #ddd; 
+	margin-left:15px;
+	color:#6c0439;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.navbar .nav > li > a {
+	font-family: CharlemagneBoldRegular;
+}
+
+.navbar .nav > li {
+  border-bottom: 4px solid #B5A05A;
+  display: block;
+  margin: 0 2px 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+a.secret, a.secret:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+table tbody tr td:first-child a img {
+	max-width: 40px;
+}
+
+table tbody tr td:first-child {
+	text-align: center;
+}
+ 
+
