@@ -131,17 +131,46 @@ body { padding-top: 60px;/* 60px to make the container go all the way to the bot
 <footer>
 	<div class="container">
 		<div class="logos hidden-tablet hidden-phone">
-			<div class="span1"> <img src="/public/img/lcc.jpg" alt="Footer_logo"> </div>
-			<div class="span1"> <img src="/public/img/england.jpg" alt="Footer_logo"> </div>
-			<div class="span1"> <img src="/public/img/heritage.png" alt="Footer_logo"> </div>
-			<div class="span1"> <img src="/public/img/gold2009.png" alt="Footer_logo"> </div>
-			<div class="span1"> <img src="/public/img/gold2010.png" alt="Footer_logo"> </div>
-			<div class="span1"> <img src="/public/img/excellence.gif" alt="Footer_logo"> </div>
-			<div class="span1"> <img src="/public/img/tourism.jpg" alt="Footer_logo"> </div>
-			<div class="span1"> <img src="/public/img/nationalforest.gif" alt="Footer_logo"> </div>
-			<div class="span1"> <img src="/public/img/hlf.jpg" alt="Footer_logo"> </div>
-			<div class="span1"> <img src="/public/img/award.jpg" alt="Footer_logo"> </div>
-			<div class="span1"> <img src="/public/img/accredited.png" alt="Footer_logo"> </div>
+			<div class="span2  offset1"> 
+			  <span class="row">
+			    <img src="/public/img/england.jpg" alt="Footer_logo">
+			  </span>
+			</div>
+			<div class="span2"> 
+			  <span class="row">
+			    <img src="/public/img/small-visitor-attraction.jpg" alt="Footer_logo">
+			  </span>
+			  <span class="row">
+			    <img src="/public/img/nationalforest.gif" alt="Footer_logo">
+			  </span>
+			</div>
+			<div class="span2"> 
+			  <span class="row">
+			    <img src="/public/img/access-for-all.jpg" alt="Footer_logo">
+			  </span>
+			  <span class="row">
+			    <img src="/public/img/accredited.png" alt="Footer_logo">
+			  </span>
+			</div>
+			<div class="span2"> 
+			  <span class="row">
+			    <img src="/public/img/hlf.jpg" alt="Footer_logo">
+			  </span>
+			  <span class="row">
+			    <img src="/public/img/award.jpg" alt="Footer_logo">
+			  </span>
+			</div>
+			<div class="span2"> 
+			  <span class="row">
+			    <img src="/public/img/lcc.jpg" alt="Footer_logo">
+			  </span>
+			  <span class="row">
+			    <img src="/public/img/gold2010.jpg" alt="Footer_logo">
+			  </span>
+			  <span class="row"> 
+			    <img src="/public/img/gold2009.jpg" alt="Footer_logo"> 
+			  </span>
+			</div>
 		</div>
 	</div>
 	<div class="container" style="padding-top:20px;">
