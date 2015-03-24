@@ -32,7 +32,8 @@ class Blogger_post  {
 		$cache_name = "blogger_post_".$postId.".json";
 		$cache_data = null;
 		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL, "https://www.blogger.com/feeds/".BLOGGER_ID."/posts/default/".$postId."?alt=json");
+		$url = "https://www.blogger.com/feeds/".BLOGGER_ID."/posts/default/".$postId."?alt=json";
+		curl_setopt($ch, CURLOPT_URL, $url);
 		curl_setopt($ch, CURLOPT_HEADER, FALSE); // remove header
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, CURL_TIME_OUT);
@@ -42,12 +43,16 @@ class Blogger_post  {
 		if(curl_errno($ch)) // get the cached version and send a warning
 		{
 			$cache_data = json_decode($this->_CI->cache->get($cache_name));
-			tell_webmaster("Blogger Post feed ".$postId." not working. Curl error number ".curl_errno($ch).".");
+			$message = "Blogger Post feed ".$postId." not working. Curl error number ".curl_errno($ch).". ";
+			$message .= $url;
+			tell_webmaster($message);
 		}
 		elseif (!$this->_isJson($feed)) // the feed is not valid
 		{
 			$cache_data = json_decode($this->_CI->cache->get($cache_name));
-			tell_webmaster("Blogger Post feed ".$postId." not valid. Got this instead (".$feed.")");
+			$message = "Blogger Post feed ".$postId." not valid. Got this instead (".$feed."). ";
+			$message .= $url;
+			tell_webmaster($message);	
 		}
 		else // refresh the cache
 		{
