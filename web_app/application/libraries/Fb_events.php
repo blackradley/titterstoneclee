@@ -52,7 +52,7 @@ class Fb_events
 		{
 			$fql = "SELECT eid, name, pic, start_time, end_time, description
             FROM event WHERE creator = ".FACEBOOK_PAGE_ID." 
-			AND (end_time > now() OR start_time > now()) ORDER BY start_time asc LIMIT 40";
+			AND (end_time > now() OR start_time > now()) ORDER BY start_time asc LIMIT 70";
 			$param  =   array(	"method"    => "fql.query",
 								"query"     => $fql,
 								"callback"  => "");
