@@ -587,7 +587,7 @@ footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
-.drop-shadow { z-index: -1; }
+.drop-shadow { z-index: 0; }
 .drop-shadow:before, .drop-shadow:after { display: none; }
 .banners {
 	margin-left: -20px;
