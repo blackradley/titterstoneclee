@@ -66,14 +66,14 @@ class Fb_graph
 				$cache_data = $feed;
 			} catch(FacebookApiException $e) { // get the cached version and send a warning
 				log_message('debug', 'Fb_graph GET error using data cache.');
-				$cache_data = json_decode($this->CI->cache->get($cache_name));
+				$cache_data = $this->CI->cache->get($cache_name);
 				tell_webmaster("Facebook Graph feed not working.");	
 			}
 		}
 		else // use the cache and avoid another request
 		{
 			log_message('debug', 'Fb_graph using data cache to save request.');
-			$cache_data = json_decode($this->CI->cache->get($cache_name));
+			$cache_data = $this->CI->cache->get($cache_name);
 		}
 		return $cache_data;
 	}
