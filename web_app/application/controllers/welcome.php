@@ -1,4 +1,6 @@
 ﻿<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+require_once(APPPATH.'libraries/ChromePhp.php'); // For use with Chrome Logger (http://craig.is/writing/chrome-logger)
+// ChromePhp::log($this->facebookGraph); // use like this.
 
 class Welcome extends CI_Controller {
 	
@@ -31,6 +33,7 @@ class Welcome extends CI_Controller {
 		//Facebook - About and Description
 		$this->load->library('Fb_graph');
 		$content_data['graph'] = $this->fb_graph->getGraph();
+		ChromePhp::log($content_data['graph']);
 
 		$this->layout_data['title'] = 'Welcome';
 		$this->layout_data['content'] = $this->load->view('pages/home', $content_data, true);
