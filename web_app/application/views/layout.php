@@ -157,13 +157,10 @@ body { padding-top: 60px;/* 60px to make the container go all the way to the bot
 			    <img src="/public/img/hlf.jpg" alt="Footer_logo">
 			  </span>
 			  <span class="row">
-			    <img src="/public/img/award.jpg" alt="Footer_logo">
+			    <img src="/public/img/lcc.jpg" alt="Footer_logo">
 			  </span>
 			</div>
 			<div class="span2"> 
-			  <span class="row">
-			    <img src="/public/img/lcc.jpg" alt="Footer_logo">
-			  </span>
 			  <span class="row">
 			    <img src="/public/img/gold2010.jpg" alt="Footer_logo">
 			  </span>
